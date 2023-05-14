@@ -44,6 +44,8 @@ if [[ $1 = "-rf" || $1 = "--regen-full" ]]; then
 fi
 
 if [[ $1 = "-c" || $1 = "--clean" ]]; then
+   make clean
+   make mrproper
    rm -rf out
    echo "Cleaned output folder"
 fi
