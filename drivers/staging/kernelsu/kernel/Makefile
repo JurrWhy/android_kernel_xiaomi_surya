@@ -13,7 +13,7 @@ obj-y += kernel_compat.o
 
 obj-y += selinux/
 
-KSU_GIT_VERSION := 702
+KSU_GIT_VERSION := 706
 ccflags-y += -DKSU_GIT_VERSION=$(KSU_GIT_VERSION)
 
 ifndef EXPECTED_SIZE
